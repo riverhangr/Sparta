@@ -1,0 +1,26 @@
+.jumbotron{
+	font-family: 'Cute Font', cursive;
+}
+.cards{
+	display:flex;
+	text-align: center;
+}
+.card{
+	margin:auto;
+	font-family: 'Cute Font', cursive;
+
+
+}
+.middlebox
+{
+	padding-left:20px;
+	padding-right: 20px;
+	font-family: 'Cute Font', cursive;
+	border: 5px solid;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+.container
+{
+
+}

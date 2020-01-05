@@ -1,0 +1,30 @@
+p{
+	color:black;
+}
+
+h4{
+	color:white;
+	font-size: 30px;
+
+}
+h1{
+	color:white;
+	font-size: 50px;
+}
+
+.nemo-img{
+	
+	background-image: url("http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0");
+	border-radius: 10px;
+	padding:50px;
+	font-family: 'Cute Font', cursive;
+	text-align: center;
+	width:200px;
+	height:200px;
+}
+
+
+.outer{
+	width:600px;
+	margin: auto;
+}
