@@ -1,0 +1,41 @@
+.container{
+	font-family: 'Jua', sans-serif;
+	font-size: 20px;
+	margin-left: 20px;
+}
+.lead{
+	font-size: 25px;
+	margin: auto;
+}
+.carousel-inner{
+	margin-left: 20px;
+}
+.tit{
+	font-size:40px;
+	margin: auto;
+}
+.input-group{
+	font-family: 'Jua', sans-serif;
+	font-size:20px;
+	display: flex;
+	margin-left: 20px;
+
+}
+.birth{
+	font-size: 20px;
+}
+.custom-select{
+	background-color: white;
+}
+.input-group-text{
+	background-color: skyblue;
+}
+.form-control{
+
+}
+.btn-primary{
+	background-color: pink;
+	font-family: 'Jua', sans-serif;	
+	margin-top: 10px;
+	margin-left: 150px;
+}
