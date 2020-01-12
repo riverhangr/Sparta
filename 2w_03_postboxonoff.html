@@ -1,14 +1,62 @@
 <!DOCTYPE html> 
 <html>
 <head>
-	<title>bootstrap00</title>
+	<title>2w_03_postbox</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
-	<link rel = "stylesheet" type = "text/css" href = "./first05.css">
+	<link rel = "stylesheet" type = "text/css" href = "./2w_02css.css">
 	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		// funcion정의
+		function button_click(){
+        	console.log($('#input1').val());
+        	var text = $('#input1').val();
+        	
+        	//var textUpper = text.toUpperCase();
+       		//console.log(textUpper);
+        
+        	var split_values = text.split('#');
+        	console.log(split_values);
+
+        	var index = text.indexOf('a');
+        	console.log(index);
+    	}
+
+    	var visit =0;
+
+    	function visit_cnt(num){
+    		visit= num+1;
+    		console.log(num, visit);
+    		
+    		if(visit == 10){
+    			//window.alert('10번째클릭이다');
+    			$('#postbox').hide();
+    		}
+
+    	}
+
+    	$(document).ready(function(){
+        	  console.log('로딩 끝났어!');
+        	$('#toggle-button').click(function(){
+
+          		//$('#postbox').hide();
+          		//console.log($('#postbox').css('display'))
+          		$('#postbox').toggle();
+          		
+          		if($('#postbox').css('display') == 'none'){
+          			$('#toggle-button').text('포스팅박스 열기')
+          		}else{
+          			$('#toggle-button').text('포스팅박스 닫기')
+          		}
+          		//console.log($('#postbox').css('display'))
+        	})
+    });
+
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -18,26 +66,23 @@
 			<hr class="my-4">
 			
 			<p class="lead">
-			<a class="btn btn-primary btn-lg" href="#" role="button">포스팅 박스 열기</a>
+			<a id="toggle-button" class="btn btn-primary btn-lg" href="#" role="button">포스팅 박스 닫기</a>
 			</p>
 		</div>
 		
 		<form>
-		<div class = "middlebox">
+		<div class = "middlebox" id = "postbox">
   		<div class="form-group">
 		    <label for="exampleInputEmail1">URL</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		    <input type="text" class="form-control" id="input1">
 		    
 		  </div>
 		  <div class="form-group" >
 		    <label for="exampleInputPassword1">간단 코멘트</label>
-		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		    <input type="text" class="form-control" >
 		  </div>
-		  <div class="form-check">
-		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-		    
-		  </div>
-		  <button type="submit" class="btn btn-primary">기사저장</button>
+		 
+		  <button id="button1" type="button" class="btn btn-primary">기사저장</button>
 		</div>
 		</form>
 
