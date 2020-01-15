@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2wsubject</title>
+	<link rel = "stylesheet" type = "text/css" href = "2wsubject.css">
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+	
+
+	 function clk(){
+
+	 	let boxname = $('#box1').val();
+	 	let boxcnt = $('#box2').val();
+	 	let boxadd = $('#box3').val();
+	 	let boxphn = $('#box4').val();
+	 
+
+	 	if(boxname ==''){
+	 		alert('이름을 입력하세요')
+	 		$('#box1').focus();
+	 	}else if(boxcnt == ''){
+	 		alert('수량을 선택하세요')
+	 		$('#box2').focus();
+	 	}else if(boxadd==''){
+	 		alert('주소를 입력하세요')
+	 		$('#box3').focus();
+	 	}else if(boxphn==''){
+	 		alert('번호를 입력하세요')
+	 		$('#box4').focus();
+	 	}else {
+	 		alert('주문완료')
+	 	}
+
+	 }
+
+		
+
+	</script>
+</head>
+<body>
+<!-- 사진 -->
+	<div class = "wrap">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		        <img class="d-block" src="./IMG_0325.jpg" alt="First slide">
+		  </div>
+		</div>
+	<!-- 점보 -->
+	<div class = "wrap2">
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+		    <p class="tit"> 개쉬가드 <span class = "birth">가격: 20,000원/벌</span></p>
+		    <p class="lead">수영할때도 패셔너블한 강아지 되기</p>
+		  </div>
+		</div>
+	
+	<!-- 주문자이름 -->
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <span class="inputgrouptext1" >주문자이름</span>
+		  	 <input type="text" class="formcontrol1" id="box1">
+		  </div>
+		</div>
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <span class="inputgrouptext1" for="inputGroupSelect01">수량</span>
+	          <select class="formcontrol2" id="box2">
+	            <option value=""> -- 수량을 선택하세요 -- </option>
+	            <option value="1">1</option>
+	            <option value="2">2</option>
+	            <option value="3">3</option>
+	          </select>
+		    </div>
+		</div>
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <span class="inputgrouptext1">주소</span>
+		  	 <input type="text" class="formcontrol3"  id="box3">
+		  </div>
+		</div>
+		<div class="input-group">
+		  <div class="input-group-prepend">
+		    <span class="inputgrouptext1">전화번호</span>
+		  	 <input type="text" class="formcontrol4"  id="box4">
+		  </div>
+		</div>
+		<div class="input-group">
+			<button onclick="clk()" type="button" class="btn-primary">주문 하기</button>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

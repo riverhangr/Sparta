@@ -1,0 +1,90 @@
+.wrap{
+	width: 400px;
+    margin: auto;
+}
+.wrap2{
+	padding-left: 10px;
+}
+.d-block{
+	background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+}
+
+.container{
+	font-family: 'Jua', sans-serif;
+	font-size: 20px;
+	
+}
+.birth{
+	font-size: 20px;
+}
+.lead{
+	font-size: 25px;
+	margin: auto;
+}
+
+
+.tit{
+	font-size:40px;
+	margin: auto;
+}
+.input-group{
+	font-family: 'Jua', sans-serif;
+	font-size:20px;
+	display: flex;
+}
+.input-group-prepend{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.inputgrouptext1{
+	background-color: skyblue;
+	padding-top: 5px;
+	padding-right:12px;
+	padding-bottom: 5px;
+	padding-left: 12px;
+
+}
+.formcontrol1{
+	position: relative;
+	padding-top: 5px;
+	padding-right: 90px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+
+}
+.formcontrol2{
+	font-family: 'Jua', sans-serif;
+	font-size: 15px;
+	position: relative;
+	padding-top: 5px;
+	padding-right: 148px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.formcontrol3{
+	position: relative;
+	padding-top: 5px;
+	padding-right: 138px;
+	padding-bottom:5px;
+	padding-left: 10px;
+}
+.formcontrol4{
+	position: relative;
+	padding-top: 5px;
+	padding-right: 104px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+
+}
+
+.btn-primary{
+	background-color: pink;
+	font-family: 'Jua', sans-serif;	
+	margin-left: 150px;
+	font-size: 20px;
+}
